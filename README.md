@@ -15,7 +15,7 @@ Built on top of [GSDMM: short text clustering](https://github.com/rwalk/gsdmm) a
 N.B. the creation of groups (a.k.a. clustering) is automated, but the topic description is not. You need a human to read some representative examples of each group and come up with a meaningful, human-readable description.
 
 ## Usage
-Get Twitter API credentials (`twitter-api-keys.json`) from [Jacopo](jmargutti@redcross.nl) and Google API crendtials from [Google Cloud Platform Console](https://console.cloud.google.com/) (login details in bitwarden).
+Get Twitter API credentials (`twitter-api-keys.json`) from [Jacopo](mailto:jmargutti@redcross.nl) and Google API crendtials from [Google Cloud Platform Console](https://console.cloud.google.com/) (login details in bitwarden).
 
 1. Get tweets of past week with
 ```
