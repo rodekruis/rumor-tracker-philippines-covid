@@ -1,0 +1,6 @@
+__pycache__/*
+PowerBI/**
+topics/*
+tweets/*
+**.json
+**.pickle
