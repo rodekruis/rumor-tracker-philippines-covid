@@ -38,4 +38,3 @@ Options:
   --modelname TEXT  Name of model to be loaded or saved (.pickle)
   --help            Show this message and exit.
 ```
-

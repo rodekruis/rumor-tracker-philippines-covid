@@ -21,8 +21,6 @@ STOPWORDS.append('czar')
 STOPWORDS.append('because')
 STOPWORDS.append('like')
 STOPWORDS.append('get')
-# STOPWORDS.append('measles')
-# STOPWORDS.append('polio')
 import preprocessor as tp
 
 
