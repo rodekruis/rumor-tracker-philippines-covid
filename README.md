@@ -26,11 +26,7 @@ For 510: Google cloud service account credentials are accessible [here](https://
 
 ### with Docker
 1. Install [Docker](https://www.docker.com/get-started)
-3. Download vector input data from [here](https://rodekruis.sharepoint.com/sites/510-CRAVK-510/_layouts/15/guestaccess.aspx?docid=09ee1386e97b54b7cbd9399c730181efa&authkey=AelH_jSEguHCrGEp5gh2oyI&expiration=2022-07-04T22%3A00%3A00.000Z&e=OBsIge), unzip and move it to
-```
-vector/
-```
-5. Copy your Google, Twitter and Azure credentials in
+5. Copy your Google, Twitter and Azure credentials (examples provided) in
 ```
 credentials/
 ```
@@ -45,9 +41,6 @@ docker run -it --entrypoint /bin/bash rodekruis/rumor-tracker-philippines-covid
 5. Check that everything is working by running the pipeline (see [Usage](https://github.com/rodekruis/rumor-tracker-philippines-covid#usage) below)
 
 
-### Manual Setup
-TBI
-
 ## Usage
 ```
 Usage: run-pipeline
@@ -57,17 +50,17 @@ Usage: run-pipeline
 
 1. Get tweets of past week
 ```
-python get_past_tweets.py
+pipeline/src/pipeline/get_past_tweets.py
 ```
 2. Geolocate tweets based on locations mentioned
 ```
-python parse_geolocate_tweets.py
+pipeline/src/pipeline/parse_geolocate_tweets.py
 ```
 3. Translate to English, detect sentiment
 ```
-python get_sentiment_tweets.py
+pipeline/src/pipeline/get_sentiment_tweets.py
 ```
 4. Group tweets in topics
 ```
-python topic_modelling 
+pipeline/src/pipeline/predict_topic_tweets.py 
 ```
